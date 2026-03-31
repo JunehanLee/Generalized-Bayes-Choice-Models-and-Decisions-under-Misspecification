@@ -1,7 +1,7 @@
 from .coefficients import sample_random_coefficients
 from .dgp import generate_multinomial_dgp, export_dataframe_to_csv
 from .mnl_estimation import fit_hier_bayes_mnl, predict_hier_bayes_mnl
-from .profit import (
+from .profit import 
     PeriodOptimizationResult,
     PricingExperimentResult,
     compute_choice_probs_mnl,
@@ -14,7 +14,7 @@ from .profit import (
     compute_cf_revenue_A,
     simulate_cf_revenue,
     run_pricing_experiment,
-)
+
 __all__ = [
     "sample_random_coefficients",
     "generate_multinomial_dgp",
