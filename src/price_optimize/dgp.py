@@ -131,7 +131,7 @@ def generate_multinomial_dgp(
                 # error_outside = rng.normal(loc=0.0, scale=1.0)
 
             elif error_type == "logit":
-                errors_prod = rng.gumbel(loc=0.0, scale=1.0, size=n_products)
+                errors_prod = rng.gumbel(loc=0.0, scale=0.78, size=n_products)
                 # error_outside = rng.gumbel(loc=0.0, scale=1.0)
 
             else:
