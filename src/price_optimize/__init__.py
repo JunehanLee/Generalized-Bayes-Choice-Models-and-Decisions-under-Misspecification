@@ -1,6 +1,6 @@
 from .coefficients import sample_random_coefficients
 from .dgp import generate_multinomial_dgp, export_dataframe_to_csv
-from .mnl_estimation import fit_hier_bayes_mnl, predict_hier_bayes_mnl
+from .mnl_estimation import fit_hier_bayes_mnl, predict_hier_bayes_mnl,mnl_loss_fn,fit_hier_generalized_bayes_mnl
 from .profit import (
     PeriodOptimizationResult,
     PricingExperimentResult,
@@ -38,4 +38,5 @@ __all__ = [
     "run_pricing_experiment_personalized",
     "compute_choice_rate",
     "simulate_cf_choice_rate_personalized"
+    "mnl_loss_fn","fit_hier_generalized_bayes_mnl",
 ]
