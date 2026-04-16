@@ -305,5 +305,12 @@ def fit_hier_generalized_bayes_mnl(
         pm.Potential(f"{loss_kind}_loss", -lam * loss)
 
         trace = pm.sample(random_seed=seed, **sample_kwargs)
-
-    return trace, model
+    meta = {
+        "I": I,
+        "J": J,
+        "price_cols": price_cols,
+        "id_col": id_col,
+        "y_col": y_col,
+        "categories": cust_categories,
+    }
+    return trace, meta
